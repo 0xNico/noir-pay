@@ -11,6 +11,7 @@ First **clone** the repo locally.
 Then run these commands **in order**, it is important that you run the tests one after the other as this is how the functional flow of zk-PROOFs work. You cannot withdraw funds that no proof was ever generated for. 
 ```bash cd ./program && cargo test-bpf deposit_should_succeed```
 ``` ./program && cargo test-bpf withdrawal_should_succeed```
+> Please note this will only currently work on Linux/Mac OSX environment's due to the need for the Solana Rust BPF Toolchain. - I have tested it from within WSL2 and it works there also. 
 
 ### Light Protocol Description
 
@@ -27,5 +28,5 @@ If you like to directly contact Light Protocol you can do so via their [Twitter 
 
 ### 888 Anon Club Bounty
 > Bounty currently @ 88 SOL [$10,500] At time of writing. 
-
+If you are a keen web3 developer and would love to build a beautiful frontend for 'Noir Pay' with integration into Solana Pay - then lets do that today! 
 To claim / start working on this bounty please reach out to sleepdev#6905 on discord or alternatively [@0xnicoj](https://twitter.com/0xnicoj) on twitter. 

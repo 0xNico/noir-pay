@@ -34,5 +34,6 @@ If you like to directly contact Light Protocol you can do so via their [Twitter]
 
 ### 888 Anon Club Bounty
 > Bounty currently @ 88 SOL [$10,500] At time of writing. 
+
 If you are a keen web3 developer and would love to build a beautiful frontend for 'Noir Pay' with integration into Solana Pay - then lets do that today! 
 To claim / start working on this bounty please reach out to sleepdev#6905 on discord or alternatively [@0xnicoj](https://twitter.com/0xnicoj) on twitter. 

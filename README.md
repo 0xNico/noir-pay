@@ -7,10 +7,16 @@ Noir Pay will be directly built ontop of the Light Protocol SDK and provide user
 
 ### Testing the Program
 First **clone** the repo locally. 
-```bash git clone https://github.com/Lightprotocol/light-protocol-program.git```
+```
+git clone https://github.com/Lightprotocol/light-protocol-program.git
+```
 Then run these commands **in order**, it is important that you run the tests one after the other as this is how the functional flow of zk-PROOFs work. You cannot withdraw funds that no proof was ever generated for. 
-```bash cd ./program && cargo test-bpf deposit_should_succeed```
-``` ./program && cargo test-bpf withdrawal_should_succeed```
+```
+bash cd ./program && cargo test-bpf deposit_should_succeed
+```
+```
+ ./program && cargo test-bpf withdrawal_should_succeed
+```
 > Please note this will only currently work on Linux/Mac OSX environment's due to the need for the Solana Rust BPF Toolchain. - I have tested it from within WSL2 and it works there also. 
 
 ### Light Protocol Description
@@ -24,7 +30,7 @@ Light Protocol is trustless: the zero-knowledge proof includes meta data such as
 - The implementation of the [poseidon hash](https://docs.rs/arkworks-gadgets/0.3.14/arkworks_gadgets/poseidon/circom/index.html) is based on [arkworks_gadgets](https://github.com/webb-tools/arkworks-gadgets).
 - Light uses a circuit based on [tornado_pool](https://github.com/tornadocash/tornado-pool/tree/onchain-tree/circuits).
 
-If you like to directly contact Light Protocol you can do so via their [Twitter API](https://twitter.com/LightProtocol)
+If you like to directly contact Light Protocol you can do so via their [Twitter](https://twitter.com/LightProtocol)
 
 ### 888 Anon Club Bounty
 > Bounty currently @ 88 SOL [$10,500] At time of writing. 

@@ -7,15 +7,15 @@ Noir Pay will be directly built ontop of the Light Protocol SDK and provide user
 
 ### Testing the Program
 First **clone** the repo locally. 
-```
+```bash
 git clone https://github.com/Lightprotocol/light-protocol-program.git
 ```
 Then run these commands **in order**, it is important that you run the tests one after the other as this is how the functional flow of zk-PROOFs work. You cannot withdraw funds that no proof was ever generated for. 
+```bash
+cd ./program && cargo test-bpf deposit_should_succeed
 ```
-bash cd ./program && cargo test-bpf deposit_should_succeed
-```
-```
- ./program && cargo test-bpf withdrawal_should_succeed
+```bash
+./program && cargo test-bpf withdrawal_should_succeed
 ```
 > Please note this will only currently work on Linux/Mac OSX environment's due to the need for the Solana Rust BPF Toolchain. - I have tested it from within WSL2 and it works there also. 
 
